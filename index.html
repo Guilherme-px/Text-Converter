@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <title>Conversor de texto</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="pageTitle">
+                <h1 class="pageTitle">Conversor de texto</h1>
+            </div>
+        </header>
+        <div class="content">
+            <div class="main-content">
+                <h2>Conversor</h2>
+                <div class="convert-text">
+                    <textarea id='textInput' placeholder="Digite o texto para converter..."></textarea>
+                    <textarea id='textOutput' placeholder="Texto convertido..." readonly></textarea>
+                </div>
+                <div class="info-letter">
+                    <span>Total de letras:</span>
+                    <span class="word-count">0</span>
+                </div>
+                <div class="info-word">
+                    <span>Total de palavras:</span>
+                    <span class="txt-count">0</span>
+                </div>
+                <div class="function-button">
+                    <button onclick="capitalizerFirst()">Primeiras Maiúsculas</button>
+                    <button onclick="allCapitalizer()">Todas maiúsculas</button>
+                    <button onclick="lowerCase()">Todas minúsculas</button>
+                    <button onclick="hashtagsCreator()">Criador de hashtag</button>
+                    <button onclick="reverseText()">Inverter texto</button>
+                </div>
+            </div>
+            <div class="info-content">
+                <p>
+                    <strong>Primeiras Maiúsculas: </strong>Essa opção transforma a primeira letra de cada palavra em maiúscula, basta colar o seu texto e clicar no botão "Primeiras Maiúsculas" e pronto na caixa de texto ao lado você terá seu texto convertido. <br><br>
+                    <strong>Exemplo: </strong>Texto Convertido Para Primeiras Letras Maiúsculas.
+                </p>
+                <p>
+                    <strong>Todas maiúsculas: </strong>Essa opção converte todas as letras do seu texto para 
+                    maiúsculas, basta colar o seu texto e clicar no botão "Todas maiúsculas" e pronto na caixa de texto ao lado você terá seu texto convertido. <br><br>
+                    <strong>Exemplo: </strong>TEXTO CONVERTIDO PARA TODAS AS LETRAS MAIÚSCULAS.
+                </p>
+                <p>
+                    <strong>Todas minúsculas: </strong>Essa opção converte todas as letras do seu texto para
+                    minúsculas, basta colar o seu texto e clicar no botão "Todas minúsculas" e pronto na caixa de texto ao lado você terá seu texto convertido. <br><br>
+                    <strong>Exemplo: </strong> texto convertido para todas as letras em minúsculas.
+                </p>
+                <p>
+                    <strong>Criador de hashtag: </strong>Quer transformar várias palavras de uma só vez em #hashtag para adicionar no seu post no twitter ou no instagram ? Bastacolar o seu texto e clicar no botão “Criador de hashtag” e pronto na caixa de texto ao lado você terá seu texto convertido em várias #hashtags prontinhas para serem adicionadas nos seus posts. <br><br>
+                    <strong>Exemplo: </strong>#texto #convertido #para #hashtag.
+                </p>
+                <p>
+                    <strong>Inverter texto: </strong>Essa opção inverte cada palavra do seu texto, basta colar
+                    o seu texto que deseja inverter e clicar no botão "Inverter texto" e pronto na caixa de texto ao lado você terá seu texto invertido. <br><br>
+                    <strong>Exemplo: </strong>oditrevni otxeT
+                </p>
+            </div>
+        </div>
+        <footer class="footer"><span>Desenvolvido por: Guilherme</span></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

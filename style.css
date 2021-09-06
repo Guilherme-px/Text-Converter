@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+.pageTitle h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+    background-color: black;
+}
+
+.content {
+    grid-area: content;
+}
+
+.main-content {
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    width: 800px;
+    margin-left: 16rem;
+    padding: 2rem;
+    margin-block: 1.5rem;
+}
+
+.info-content p{
+    grid-area: info-content;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    width: 800px;
+    margin-left: 16rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-content p {
+    font-size: 1.1rem;
+}
+
+.content h2 {
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+
+textarea {
+    resize: none;
+    margin-top: 2rem;
+    width: 350px;
+    height: 30vh;
+    margin: 10px 24px;
+    font-size: 1.1rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info-word {
+    margin-left: 25px;
+    margin-bottom: 2rem;
+}
+
+.info-letter {
+    margin-top: 1.5rem;
+    margin-left: 25px;
+    margin-bottom: 1rem;
+}
+
+.function-button {
+    padding: 0 24px;
+}
+
+.function-button button {
+    min-width: 5rem;
+    height: 3rem;
+    padding: 10px;
+    margin-right: 10px;
+    margin-block: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.function-button button:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 2px purple;
+}
+
+.footer {
+    grid-area: footer;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
